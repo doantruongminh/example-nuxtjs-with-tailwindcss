@@ -1,0 +1,39 @@
+<template>
+  <div class="flex-1 mb-4">
+    <h3 class="font-bold text-2xl mb-2">Breadcrumbs:</h3>
+    <div class="text-base breadcrumbs">
+      <ul>
+        <li>
+          <a>Home</a>
+        </li>
+        <li>
+          <a>Guide</a>
+        </li>
+        <li>
+          <a>Components</a>
+        </li>
+        <li>
+          <a>Guide</a>
+        </li>
+        <li>
+          <a>Button</a>
+        </li>
+        <li>
+          <a>Input</a>
+        </li>
+        <li>
+          <a>Textarea</a>
+        </li>
+        <li>
+          <a>Select</a>
+        </li>
+        <li>
+          <a>Checkbox</a>
+        </li>
+        <li>
+          <a>Radio</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</template>
