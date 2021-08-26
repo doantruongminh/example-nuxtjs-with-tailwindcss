@@ -36,7 +36,7 @@
 export default {
   layout: 'main',
   methods: {
-    buttonLocaleClasses(locale: string) {
+    buttonLocaleClasses(locale: string): { [key: string]: boolean } {
       return { 'text-primary': locale === this.$i18n.locale };
     },
   },
