@@ -4,7 +4,7 @@
       class="absolute top-0 z-10 w-full h-20 flex items-center justify-between px-8"
     >
       <!-- <h1 class="">{{ $t('guide.header.title') }}</h1> -->
-      <h1>Guide</h1>
+      <h1>Bitcastle</h1>
       <button class="btn btn-primary">Primary</button>
       <!-- <div class="buttonGroup">
         <button
