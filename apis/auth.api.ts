@@ -2,16 +2,21 @@ import authorizedRequest from './request/authorizedRequest';
 import unauthorizedRequest from './request/unauthorizedRequest';
 
 interface LoginBody {
-  username: string;
+  email: string;
   password: string;
 }
 
-interface LoginResponse {}
+interface LoginResponse {
+  token: string;
+}
 
 export function loginApi(body: LoginBody) {
-  return unauthorizedRequest.post<LoginResponse>('/login', body);
+  return unauthorizedRequest.post<LoginResponse>(
+    'admin/api/v1/admin/login',
+    body
+  );
 }
 
 export function logoutApi() {
-  return authorizedRequest.post('/logout');
+  return authorizedRequest.post('admin/api/v1/admin/logout');
 }

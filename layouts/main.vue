@@ -33,14 +33,16 @@
 </template>
 
 <script lang="ts">
-export default {
+import Vue from 'vue';
+
+export default Vue.extend({
   layout: 'main',
   methods: {
     buttonLocaleClasses(locale: string): { [key: string]: boolean } {
       return { 'text-primary': locale === this.$i18n.locale };
     },
   },
-};
+});
 </script>
 
 <style scoped>

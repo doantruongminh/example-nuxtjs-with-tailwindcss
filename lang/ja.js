@@ -34,7 +34,7 @@ export default {
   login: {
     content: {
       login: 'ログイン',
-      username: 'ユーザー名',
+      email: 'Eメール',
       password: 'パスワード',
     },
   },

@@ -62,7 +62,9 @@
   </div>
 </template>
 <script>
-export default {
+import Vue from 'vue';
+
+export default Vue.extend({
   data() {
     return {
       loading: false,
@@ -76,5 +78,5 @@ export default {
       }, 3000);
     },
   },
-};
+});
 </script>

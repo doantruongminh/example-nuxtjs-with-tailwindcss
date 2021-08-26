@@ -34,7 +34,7 @@ export default {
   login: {
     content: {
       login: 'Login',
-      username: 'Username',
+      email: 'Email',
       password: 'Password',
     },
   },

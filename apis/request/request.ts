@@ -24,7 +24,7 @@ export default class Request {
   constructor() {
     this.api = axios.create({
       withCredentials: false,
-      baseURL: '',
+      baseURL: 'https://api.dev.yellow.co.th/',
       headers: {
         'Content-Type': 'application/json',
       },
