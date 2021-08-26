@@ -11,7 +11,7 @@
         <div class="flex flex-wrap -mx-6">
           <div class="flex-1 min-w-263px">
             <GuideInput />
-            <ComponentGuideSelect />
+            <GuideSelect />
           </div>
           <div class="flex-1 min-w-263px">
             <GuideTextarea />
