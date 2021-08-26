@@ -7,63 +7,56 @@
         :class="{ loading: loading }"
         @click="handleClick"
       >
-        Primary
+        {{ $t('guide.content.primary') }}
       </button>
       <button
         class="btn btn-secondary m-2"
         :class="{ loading: loading }"
         @click="handleClick"
       >
-        Secondary
+        {{ $t('guide.content.secondary') }}
       </button>
       <button
         class="btn btn-info m-2"
         :class="{ loading: loading }"
         @click="handleClick"
       >
-        Info
+        {{ $t('guide.content.info') }}
       </button>
       <button
         class="btn btn-success m-2"
         :class="{ loading: loading }"
         @click="handleClick"
       >
-        Success
+        {{ $t('guide.content.success') }}
       </button>
       <button
         class="btn btn-warning m-2"
         :class="{ loading: loading }"
         @click="handleClick"
       >
-        Warning
+        {{ $t('guide.content.warning') }}
       </button>
       <button
         class="btn btn-error m-2"
         :class="{ loading: loading }"
         @click="handleClick"
       >
-        Danger
-      </button>
-      <button
-        class="btn btn-primary m-2"
-        :class="{ loading: loading }"
-        @click="handleClick"
-      >
-        Primary
+        {{ $t('guide.content.error') }}
       </button>
       <button
         class="btn btn-outline btn-primary m-2"
         :class="{ loading: loading }"
         @click="handleClick"
       >
-        Primary
+        {{ $t('guide.content.primary') }}
       </button>
       <button
         class="btn btn-outline btn-secondary m-2"
         :class="{ loading: loading }"
         @click="handleClick"
       >
-        Secondary
+        {{ $t('guide.content.secondary') }}
       </button>
     </div>
   </div>

@@ -1,41 +1,41 @@
 <template>
   <div class="flex flex-col flex-1 bg-secondary">
     <h1 class="text-center text-white font-bold text-3xl mt-6 uppercase">
-      Component Guide
+      {{ $t('guide.content.guide') }}
     </h1>
     <div class="card shadow m-6 bg-white">
       <div class="card-body">
-        <div class="flex">
-          <ComponentGuideBreadcrumbs />
+        <div class="flex flex-wrap min-w-263px">
+          <GuideBreadcrumbs />
         </div>
-        <div class="flex -mx-6">
-          <div class="flex-1">
-            <ComponentGuideInput />
+        <div class="flex flex-wrap -mx-6">
+          <div class="flex-1 min-w-263px">
+            <GuideInput />
             <ComponentGuideSelect />
           </div>
-          <div class="flex-1">
-            <ComponentGuideTextarea />
-            <ComponentGuideSwitch />
+          <div class="flex-1 min-w-263px">
+            <GuideTextarea />
+            <GuideSwitch />
           </div>
         </div>
-        <div class="flex -mx-6">
-          <div class="flex-1">
-            <ComponentGuideRadio />
+        <div class="flex flex-wrap -mx-6">
+          <div class="flex-1 min-w-263px">
+            <GuideRadio />
           </div>
-          <div class="flex-1">
-            <ComponentGuideCheckbox />
-          </div>
-        </div>
-        <div class="flex -mx-6">
-          <div class="flex-1">
-            <ComponentGuideRange />
-          </div>
-          <div class="flex-1">
-            <ComponentGuideButton />
+          <div class="flex-1 min-w-263px">
+            <GuideCheckbox />
           </div>
         </div>
-        <div class="flex">
-          <ComponentGuideTable />
+        <div class="flex flex-wrap -mx-6">
+          <div class="flex-1 min-w-263px">
+            <GuideRange />
+          </div>
+          <div class="flex-1 min-w-263px">
+            <GuideButton />
+          </div>
+        </div>
+        <div class="flex flex-wrap min-w-263px">
+          <GuideTable />
         </div>
       </div>
     </div>
@@ -46,6 +46,12 @@
 import Vue from 'vue';
 
 export default Vue.extend({
-  layout: 'guide',
+  layout: 'main',
 });
 </script>
+<style scoped>
+.min-w-263px {
+  max-width: 100%;
+  min-width: 263px;
+}
+</style>
