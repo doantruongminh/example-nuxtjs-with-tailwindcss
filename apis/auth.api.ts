@@ -6,8 +6,10 @@ interface LoginBody {
   password: string;
 }
 
+interface LoginResponse {}
+
 export function loginApi(body: LoginBody) {
-  return unauthorizedRequest.post('/login', body);
+  return unauthorizedRequest.post<LoginResponse>('/login', body);
 }
 
 export function logoutApi() {
