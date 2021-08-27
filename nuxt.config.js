@@ -1,4 +1,7 @@
 export default {
+  env: {
+    baseUrl: process.env.BASE_URL,
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'bitcastle-web-app',
@@ -18,7 +21,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/common.ts', '~/plugins/toast.ts'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

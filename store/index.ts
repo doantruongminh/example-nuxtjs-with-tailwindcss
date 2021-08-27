@@ -1,3 +1,4 @@
+import { Context } from '@nuxt/types';
 import { ActionContext } from 'vuex/types';
 import Cookie from 'js-cookie';
 
@@ -32,7 +33,12 @@ export const mutations = {
 };
 
 export const actions = {
-  nuxtServerInit({ commit }: ActionContext<IState, IState>): void {
+  nuxtServerInit(
+    { commit, dispatch }: ActionContext<IState, IState>,
+    { req }: Context
+  ): void {
+    const token = req?.headers?.cookie?.split(TOKEN_KEY)[1]?.replace('=', '');
+    dispatch('auth/bootstrap', token);
     commit('setServerInitialized');
   },
   nuxtClientInit({ commit, getters }: ActionContext<IState, IState>): void {

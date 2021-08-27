@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
+    "dev": "nuxt && .env",
+    "build": "nuxt build && .env",
+    "start": "nuxt start && .env",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "yarn lint:js",
@@ -21,7 +21,9 @@
     "js-cookie": "^3.0.0",
     "lodash": "^4.17.21",
     "nuxt": "^2.15.7",
-    "query-string": "^7.0.1"
+    "query-string": "^7.0.1",
+    "vee-validate": "^3.4.11",
+    "vue-toast-notification": "^0.6.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",

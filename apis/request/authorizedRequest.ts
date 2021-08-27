@@ -1,9 +1,8 @@
 import { AxiosRequestConfig } from 'axios';
 import Cookie from 'js-cookie';
 
+import { TOKEN_KEY } from '../../constants/common.constant';
 import Request from './request';
-
-export const TOKEN_KEY = '__token';
 
 const authorizedRequest = new Request();
 
@@ -11,8 +10,8 @@ authorizedRequest.api.interceptors.request.use((config: AxiosRequestConfig) => {
   const newConfig: AxiosRequestConfig = { ...config };
   const token = Cookie.get(TOKEN_KEY);
   newConfig.headers.common.Authorization = token
-    ? undefined
-    : `Bearer ${token}`;
+    ? `Bearer ${token}`
+    : undefined;
   return newConfig;
 });
 

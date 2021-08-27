@@ -11,7 +11,7 @@ interface LoginResponse {
 }
 
 export function loginApi(body: LoginBody) {
-  return unauthorizedRequest.post<LoginResponse>(
+  return unauthorizedRequest.post<LoginResponse, LoginResponse>(
     'admin/api/v1/admin/login',
     body
   );

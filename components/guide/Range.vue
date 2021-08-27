@@ -1,6 +1,6 @@
 <template>
   <div class="mb-4 mx-6">
-    <h3 class="font-bold text-2xl mb-3">{{ $t('guide.content.range') }}:</h3>
+    <h3 class="font-bold text-2xl mb-3">{{ $t('guide.range') }}:</h3>
     <div class="flex flex-wrap -m-2">
       <input
         type="range"

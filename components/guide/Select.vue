@@ -1,61 +1,61 @@
 <template>
   <div class="mb-4 mx-6">
-    <h3 class="font-bold text-2xl mb-3">{{ $t('guide.content.select') }}:</h3>
+    <h3 class="font-bold text-2xl mb-3">{{ $t('guide.select') }}:</h3>
     <div class="flex flex-wrap -m-2">
       <div class="form-control m-2">
         <label class="label">
-          <span class="label-text">{{ $t('guide.content.primary') }}</span>
+          <span class="label-text">{{ $t('guide.primary') }}</span>
         </label>
         <select class="select select-bordered select-primary w-full max-w-xs">
-          <option selected="selected">{{ $t('guide.content.primary') }}</option>
+          <option selected="selected">{{ $t('guide.primary') }}</option>
         </select>
       </div>
       <div class="form-control m-2">
         <label class="label">
-          <span class="label-text">{{ $t('guide.content.secondary') }}</span>
+          <span class="label-text">{{ $t('guide.secondary') }}</span>
         </label>
         <select class="select select-bordered select-secondary w-full max-w-xs">
-          <option selected="selected">{{ $t('guide.content.secondary') }}</option>
+          <option selected="selected">{{ $t('guide.secondary') }}</option>
         </select>
       </div>
       <div class="form-control m-2">
         <label class="label">
-          <span class="label-text">{{ $t('guide.content.info') }}</span>
+          <span class="label-text">{{ $t('guide.info') }}</span>
         </label>
         <select class="select select-bordered select-info w-full max-w-xs">
-          <option selected="selected">{{ $t('guide.content.info') }}</option>
+          <option selected="selected">{{ $t('guide.info') }}</option>
         </select>
       </div>
       <div class="form-control m-2">
         <label class="label">
-          <span class="label-text">{{ $t('guide.content.success') }}</span>
+          <span class="label-text">{{ $t('guide.success') }}</span>
         </label>
         <select class="select select-bordered select-success w-full max-w-xs">
-          <option selected="selected">{{ $t('guide.content.success') }}</option>
+          <option selected="selected">{{ $t('guide.success') }}</option>
         </select>
       </div>
       <div class="form-control m-2">
         <label class="label">
-          <span class="label-text">{{ $t('guide.content.warning') }}</span>
+          <span class="label-text">{{ $t('guide.warning') }}</span>
         </label>
         <select class="select select-bordered select-warning w-full max-w-xs">
-          <option selected="selected">{{ $t('guide.content.warning') }}</option>
+          <option selected="selected">{{ $t('guide.warning') }}</option>
         </select>
       </div>
       <div class="form-control m-2">
         <label class="label">
-          <span class="label-text">{{ $t('guide.content.error') }}</span>
+          <span class="label-text">{{ $t('guide.error') }}</span>
         </label>
         <select class="select select-bordered select-error w-full max-w-xs">
-          <option selected="selected">{{ $t('guide.content.error') }}</option>
+          <option selected="selected">{{ $t('guide.error') }}</option>
         </select>
       </div>
       <div class="form-control m-2">
         <label class="label">
-          <span class="label-text">{{ $t('guide.content.disabled') }}</span>
+          <span class="label-text">{{ $t('guide.disabled') }}</span>
         </label>
         <select class="select select-bordered select-primary w-full max-w-xs" disabled="true">
-          <option selected="selected">{{ $t('guide.content.disabled') }}</option>
+          <option selected="selected">{{ $t('guide.disabled') }}</option>
         </select>
       </div>
     </div>

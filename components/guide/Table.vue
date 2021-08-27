@@ -1,14 +1,14 @@
 <template>
   <div class="flex-1 max-w-full mb-4">
-    <h3 class="font-bold text-2xl mb-2">{{ $t('guide.content.table') }}:</h3>
+    <h3 class="font-bold text-2xl mb-2">{{ $t('guide.table') }}:</h3>
     <div class="w-full overflow-x-auto">
       <table class="table w-full">
         <thead>
           <tr>
             <th></th>
-            <th>{{ $t('guide.content.name') }}</th>
-            <th>{{ $t('guide.content.job') }}</th>
-            <th>{{ $t('guide.content.favoriteColor') }}</th>
+            <th>{{ $t('guide.name') }}</th>
+            <th>{{ $t('guide.job') }}</th>
+            <th>{{ $t('guide.favoriteColor') }}</th>
           </tr>
         </thead>
         <tbody>
@@ -41,12 +41,12 @@
     </div>
     <div class="flex items-center justify-center mt-4">
       <div class="btn-group">
-        <button class="btn">{{ $t('guide.content.previous') }}</button>
+        <button class="btn">{{ $t('guide.previous') }}</button>
         <button class="btn">1</button>
         <button class="btn btn-active">2</button>
         <button class="btn">3</button>
         <button class="btn">4</button>
-        <button class="btn">{{ $t('guide.content.next') }}</button>
+        <button class="btn">{{ $t('guide.next') }}</button>
       </div>
     </div>
   </div>

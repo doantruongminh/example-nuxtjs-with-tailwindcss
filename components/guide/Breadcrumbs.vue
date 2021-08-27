@@ -1,42 +1,42 @@
 <template>
   <div class="flex-1 max-w-full mb-4">
     <h3 class="font-bold text-2xl mb-2">
-      {{ $t('guide.content.breadcrumbs') }}:
+      {{ $t('guide.breadcrumbs') }}:
     </h3>
     <div class="w-full text-base breadcrumbs mr-2">
       <ul class="flex-wrap">
         <li>
-          <a>{{ $t('guide.content.home') }}</a>
+          <a>{{ $t('guide.home') }}</a>
         </li>
         <li>
-          <a>{{ $t('guide.content.guide') }}</a>
+          <a>{{ $t('guide.guide') }}</a>
         </li>
         <li>
-          <a>{{ $t('guide.content.components') }}</a>
+          <a>{{ $t('guide.components') }}</a>
         </li>
         <li>
-          <a>{{ $t('guide.content.input') }}</a>
+          <a>{{ $t('guide.input') }}</a>
         </li>
         <li>
-          <a>{{ $t('guide.content.textarea') }}</a>
+          <a>{{ $t('guide.textarea') }}</a>
         </li>
         <li>
-          <a>{{ $t('guide.content.select') }}</a>
+          <a>{{ $t('guide.select') }}</a>
         </li>
         <li>
-          <a>{{ $t('guide.content.radio') }}</a>
+          <a>{{ $t('guide.radio') }}</a>
         </li>
         <li>
-          <a>{{ $t('guide.content.checkbox') }}</a>
+          <a>{{ $t('guide.checkbox') }}</a>
         </li>
         <li>
-          <a>{{ $t('guide.content.switch') }}</a>
+          <a>{{ $t('guide.switch') }}</a>
         </li>
         <li>
-          <a>{{ $t('guide.content.button') }}</a>
+          <a>{{ $t('guide.button') }}</a>
         </li>
         <li>
-          <a>{{ $t('guide.content.table') }}</a>
+          <a>{{ $t('guide.table') }}</a>
         </li>
       </ul>
     </div>

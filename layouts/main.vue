@@ -13,7 +13,7 @@
         px-8
       "
     >
-      <h1 class="text-4xl font-bold">{{ $t('guide.header.title') }}</h1>
+      <h1 class="text-4xl font-bold">{{ $t('layout.main.title') }}</h1>
       <div class="flex items-center">
         <button
           v-for="locale in $i18n.locales"

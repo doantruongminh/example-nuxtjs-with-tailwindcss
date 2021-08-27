@@ -24,7 +24,7 @@ export default class Request {
   constructor() {
     this.api = axios.create({
       withCredentials: false,
-      baseURL: 'https://api.dev.yellow.co.th/',
+      baseURL: process.env.baseUrl,
       headers: {
         'Content-Type': 'application/json',
       },
@@ -42,10 +42,10 @@ export default class Request {
     let cancel: Canceler;
 
     const newConfig: AxiosRequestConfig = {
+      ...config,
       params: {
         ...config.params,
       },
-      ...config,
       cancelToken: new CancelToken((c) => {
         cancel = c;
       }),
@@ -74,10 +74,10 @@ export default class Request {
     let cancel: Canceler;
 
     const newConfig: AxiosRequestConfig = {
+      ...config,
       params: {
         ...config.params,
       },
-      ...config,
       cancelToken: new CancelToken((c) => {
         cancel = c;
       }),
@@ -106,10 +106,10 @@ export default class Request {
     let cancel: Canceler;
 
     const newConfig: AxiosRequestConfig = {
+      ...config,
       params: {
         ...config.params,
       },
-      ...config,
       cancelToken: new CancelToken((c) => {
         cancel = c;
       }),
@@ -138,10 +138,10 @@ export default class Request {
     let cancel: Canceler;
 
     const newConfig: AxiosRequestConfig = {
+      ...config,
       params: {
         ...config.params,
       },
-      ...config,
       cancelToken: new CancelToken((c) => {
         cancel = c;
       }),
@@ -169,10 +169,10 @@ export default class Request {
     let cancel: Canceler;
 
     const newConfig: AxiosRequestConfig = {
+      ...config,
       params: {
         ...config.params,
       },
-      ...config,
       cancelToken: new CancelToken((c) => {
         cancel = c;
       }),

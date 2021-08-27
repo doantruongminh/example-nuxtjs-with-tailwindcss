@@ -2,17 +2,22 @@ import { ActionContext } from 'vuex/types';
 import Cookie from 'js-cookie';
 
 import { loginApi, logoutApi } from '../../apis/auth.api';
-import { TOKEN_KEY } from '../../apis/request/authorizedRequest';
+import { TOKEN_KEY } from '../../constants/common.constant';
 import { IAuthState } from './state';
 
 export default {
+  bootstrap(context: ActionContext<IAuthState, IAuthState>, token?: string) {
+    if (token) {
+      context.commit('setToken', token);
+    }
+  },
   async login(
     context: ActionContext<IAuthState, IAuthState>,
     payload: { email: string; password: string }
   ) {
     const response = await loginApi(payload);
-    context.commit('setToken', response);
-    Cookie.set(TOKEN_KEY, { expires: 9999999 });
+    context.commit('setToken', response.token);
+    Cookie.set(TOKEN_KEY, response.token, { expires: 9999999 });
   },
   async logout(context: ActionContext<IAuthState, IAuthState>) {
     if (Cookie.get(TOKEN_KEY)) {
