@@ -21,7 +21,11 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/common.ts', '~/plugins/toast.ts'],
+  plugins: [
+    '~/plugins/common.ts',
+    '~/plugins/toast.ts',
+    '~/plugins/vee-validate.ts',
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
