@@ -22,7 +22,7 @@
     "lodash": "^4.17.21",
     "nuxt": "^2.15.7",
     "query-string": "^7.0.1",
-    "vee-validate": "^3.4.11",
+    "vee-validate": "^3.4.12",
     "vue-toast-notification": "^0.6.2"
   },
   "devDependencies": {

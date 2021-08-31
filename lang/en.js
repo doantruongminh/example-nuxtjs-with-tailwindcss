@@ -45,4 +45,10 @@ export default {
     logout: 'Logout',
     logoutSuccess: 'Logout successfully',
   },
+  validate: {
+    required: '{field} is required',
+    email: 'Email invalid',
+    password:
+      'Password must be between 8 - 20 characters, and include uppercase, lowercase, number and special character',
+  },
 };
