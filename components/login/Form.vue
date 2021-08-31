@@ -4,10 +4,10 @@
       <form class="flex flex-col w-96" @submit.prevent="handleLogin">
         <ValidationProvider
           v-slot="{ errors }"
-          name="email"
+          name="Email"
           rules="required|email"
         >
-          <div class="form-control m-2">
+          <div class="form-control m-2 mb-0">
             <label class="label">
               <span class="label-text">{{ $t('login.email') }}</span>
             </label>
@@ -22,21 +22,22 @@
                 }
               "
             />
-            <p>{{ errors[0] }}</p>
+            <p class="text-error text-sm min-h-error">{{ errors[0] }}</p>
           </div>
         </ValidationProvider>
         <ValidationProvider
           v-slot="{ errors }"
-          name="password"
-          rules="required"
+          name="Password"
+          rules="required|password"
         >
-          <div class="form-control m-2">
+          <div class="form-control m-2 mt-0">
             <label class="label">
               <span class="label-text">{{ $t('login.password') }}</span>
             </label>
             <input
               type="password"
               class="input input-primary input-bordered"
+              :value="password"
               :placeholder="$t('login.password')"
               @input="
                 (e) => {
@@ -44,7 +45,7 @@
                 }
               "
             />
-            <p>{{ errors[1] }}</p>
+            <p class="text-error text-sm min-h-error">{{ errors[0] }}</p>
           </div>
         </ValidationProvider>
         <button
@@ -90,3 +91,8 @@ export default Vue.extend({
   },
 });
 </script>
+<style scoped>
+.min-h-error {
+  min-height: 1.5rem;
+}
+</style>

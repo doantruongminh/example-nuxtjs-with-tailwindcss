@@ -45,4 +45,10 @@ export default {
     logout: 'ログアウト',
     logoutSuccess: '正常にログアウトします',
   },
+  validate: {
+    required: '{field}は必須項目です',
+    email: 'メールが無効',
+    password:
+      'パスワードは8〜20文字で、大文字、小文字、数字、特殊文字を含める必要があります',
+  },
 };
