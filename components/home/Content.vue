@@ -63,6 +63,3 @@ export default Vue.extend({
   },
 });
 </script>
-
-function getNotifications() { throw new Error('Function not implemented.'); }
-function getNotifications() { throw new Error('Function not implemented.'); }
