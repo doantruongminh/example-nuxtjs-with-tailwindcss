@@ -15,6 +15,7 @@ export default {
     input: '入力',
     textarea: 'Textarea',
     select: '選択する',
+    multiSelect: "複数選択",
     radio: 'Radio',
     checkbox: 'チェックボックス',
     switch: 'スイッチ',

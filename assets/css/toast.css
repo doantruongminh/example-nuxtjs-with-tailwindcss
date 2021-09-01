@@ -6,9 +6,7 @@
     @apply opacity-0;
   }
 }
-.v-toast--fade-out {
-  animation-name: fadeOut;
-}
+
 @keyframes fadeInDown {
   from {
     @apply opacity-0;
@@ -18,9 +16,7 @@
     @apply opacity-100 transform-none;
   }
 }
-.v-toast--fade-in-down {
-  animation-name: fadeInDown;
-}
+
 @keyframes fadeInUp {
   from {
     @apply opacity-0;
@@ -30,63 +26,89 @@
     @apply opacity-100 transform-none;
   }
 }
+
+.v-toast--fade-out {
+  animation-name: fadeOut;
+}
+
+.v-toast--fade-in-down {
+  animation-name: fadeInDown;
+}
+
 .v-toast--fade-in-up {
   animation-name: fadeInUp;
 }
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 150ms ease-out;
 }
+
 .fade-enter,
 .fade-leave-to {
   @apply opacity-0;
 }
+
 .v-toast {
   @apply fixed flex top-0 bottom-0 left-0 right-0 p-8 overflow-hidden z-50 pointer-events-none;
 }
+
 .v-toast__item {
   @apply inline-flex items-center my-2 rounded pointer-events-auto opacity-90 text-base-100 cursor-pointer;
   animation-duration: 150ms;
 }
+
 .v-toast__item--success {
   @apply bg-success;
 }
+
 .v-toast__item--info {
   @apply bg-info;
 }
+
 .v-toast__item--warning {
   @apply bg-warning;
 }
+
 .v-toast__item--error {
   @apply bg-error text-base;
 }
+
 .v-toast__item--default {
   @apply bg-secondary;
 }
+
 .v-toast__item.v-toast__item--top,
 .v-toast__item.v-toast__item--bottom {
   @apply self-center;
 }
+
 .v-toast__item.v-toast__item--top-right,
 .v-toast__item.v-toast__item--bottom-right {
   @apply self-end;
 }
+
 .v-toast__item.v-toast__item--top-left,
 .v-toast__item.v-toast__item--bottom-left {
   @apply self-start;
 }
+
 .v-toast__text {
   @apply m-0 py-2 px-4 break-words;
 }
+
 .v-toast__icon {
   @apply hidden;
 }
+
 .v-toast.v-toast--top {
   @apply flex-col;
 }
+
 .v-toast.v-toast--bottom {
   @apply flex-col-reverse;
 }
+
 .v-toast.v-toast--custom-parent {
   @apply absolute;
 }

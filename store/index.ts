@@ -2,7 +2,7 @@ import { Context } from '@nuxt/types';
 import { ActionContext } from 'vuex/types';
 import Cookie from 'js-cookie';
 
-import { TOKEN_KEY } from '../constants/common.constant';
+import { TOKEN_KEY } from '~/constants/common.constant';
 
 export interface IState {
   serverInitialized: boolean;

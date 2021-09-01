@@ -15,6 +15,7 @@ export default {
     input: 'Input',
     textarea: 'Textarea',
     select: 'Select',
+    multiSelect: "Multi Select",
     radio: 'Radio',
     checkbox: 'Checkbox',
     switch: 'Switch',

@@ -1,8 +1,7 @@
 export interface IAuthState {
-    token: string;
-  }
-  
-  export default (): IAuthState => ({
-    token: '',
-  });
-  
+  token: string;
+}
+
+export default (): IAuthState => ({
+  token: '',
+});

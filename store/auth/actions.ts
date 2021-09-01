@@ -1,9 +1,9 @@
 import { ActionContext } from 'vuex/types';
 import Cookie from 'js-cookie';
 
-import { loginApi, logoutApi } from '../../apis/auth.api';
-import { TOKEN_KEY } from '../../constants/common.constant';
 import { IAuthState } from './state';
+import { loginApi, logoutApi } from '~/apis/auth.api';
+import { TOKEN_KEY } from '~/constants/common.constant';
 
 export default {
   bootstrap(context: ActionContext<IAuthState, IAuthState>, token?: string) {

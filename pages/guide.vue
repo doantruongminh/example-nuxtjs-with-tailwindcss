@@ -12,6 +12,7 @@
           <div class="flex-1 min-w-263px">
             <GuideInput />
             <GuideSelect />
+            <GuideMultiSelect />
           </div>
           <div class="flex-1 min-w-263px">
             <GuideTextarea />

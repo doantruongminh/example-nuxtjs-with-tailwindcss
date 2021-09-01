@@ -1,8 +1,8 @@
 import { AxiosRequestConfig } from 'axios';
 import Cookie from 'js-cookie';
 
-import { TOKEN_KEY } from '../../constants/common.constant';
 import Request from './request';
+import { TOKEN_KEY } from '~/constants/common.constant';
 
 const authorizedRequest = new Request();
 

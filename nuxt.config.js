@@ -25,6 +25,7 @@ export default {
     '~/plugins/common.ts',
     '~/plugins/toast.ts',
     '~/plugins/vee-validate.ts',
+    '~/plugins/multi-select.ts'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
