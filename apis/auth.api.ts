@@ -1,17 +1,17 @@
 import authorizedRequest from './request/authorizedRequest';
 import unauthorizedRequest from './request/unauthorizedRequest';
 
-interface LoginBody {
+interface ILoginBody {
   email: string;
   password: string;
 }
 
-interface LoginResponse {
+interface ILoginResponse {
   token: string;
 }
 
-export function loginApi(body: LoginBody) {
-  return unauthorizedRequest.post<LoginResponse, LoginResponse>(
+export function loginApi(body: ILoginBody) {
+  return unauthorizedRequest.post<ILoginResponse, ILoginResponse>(
     'admin/api/v1/admin/login',
     body
   );
