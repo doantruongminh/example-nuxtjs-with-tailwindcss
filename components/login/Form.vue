@@ -12,15 +12,10 @@
               <span class="label-text">{{ $t('login.email') }}</span>
             </label>
             <input
+              v-model="loginForm.email"
               type="text"
               class="input input-primary input-bordered"
-              :value="email"
               :placeholder="$t('login.email')"
-              @input="
-                (e) => {
-                  email = e.target.value;
-                }
-              "
             />
             <p class="text-error text-sm min-h-error">{{ errors[0] }}</p>
           </div>
@@ -35,15 +30,10 @@
               <span class="label-text">{{ $t('login.password') }}</span>
             </label>
             <input
+              v-model="loginForm.password"
               type="password"
               class="input input-primary input-bordered"
-              :value="password"
               :placeholder="$t('login.password')"
-              @input="
-                (e) => {
-                  password = e.target.value;
-                }
-              "
             />
             <p class="text-error text-sm min-h-error">{{ errors[0] }}</p>
           </div>
@@ -60,39 +50,8 @@
     </ValidationObserver>
   </div>
 </template>
-<script lang="ts">
-import Vue from 'vue';
-import { ValidationProvider, ValidationObserver } from 'vee-validate';
-
-export default Vue.extend({
-  components: { ValidationObserver, ValidationProvider },
-  data() {
-    return {
-      email: '',
-      password: '',
-      loading: false,
-    };
-  },
-  methods: {
-    async handleLogin(): Promise<void> {
-      this.loading = true;
-      try {
-        await this.$store.dispatch('auth/login', {
-          email: this.email,
-          password: this.password,
-        });
-        this.$router.replace('/');
-        this.$toast.success(this.$t('login.loginSuccess') as string);
-      } catch (e) {
-        this.$toast.error(this.$getMessageFromError(e));
-      }
-      this.loading = false;
-    },
-  },
-});
+<script lang="ts" src="./Form.component.ts">
 </script>
 <style scoped>
-.min-h-error {
-  min-height: 1.5rem;
-}
+@import './Form.css';
 </style>
